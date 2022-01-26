@@ -1,0 +1,51 @@
+{% load static %} 
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <title>Home - Book Store</title>
+        <link rel="stylesheet" id="ample-style-css" href="{% static 'style.css' %}" type="text/css" media="all">
+    </head>
+    <body class="wide">
+        <div id="page" class="hfeed site">
+            <header>
+                <div class="header">
+                    <div class="main-head-wrap inner-wrap clearfix">
+                        <div id="header-logo-image">
+                            <a href="/">
+                                <img src="{% static 'images/1.jpg' %}" alt="Book Store">
+                            </a>
+                        </div>
+                        <div id="header-text" class="">
+                            <h1 id="site-title">
+                                <a href="/" title="Book Store" rel="home">Book Store</a>
+                            </h1>
+                            <p>Book is the best friend.</p>
+                        </div>
+                    </div>
+                      <center>
+                    <img src="{% static 'images/2.jpg' %}" alt="Book Store">
+                      </center>
+                </div>
+            </header>
+            <div class="main-wrapper">
+                <div class="single-page clearfix">
+                    <div class="inner-wrap">
+                        <p>Think about the last good book you read. Did it make you feel more connected to others? Maybe it served as a welcome escape. Maybe it helped you rediscover the beauty in life. Did it surprise you?</p>
+                        <p>As an independent bookstore, we strive to offer the same variety and richness of experience as the books on our shelves. And because the only people we’re beholden to are our customers and ourselves, we can focus on what really matters — promoting diverse perspectives, upholding the free exchange of ideas, championing the enduring power of books, and bolstering the great community of readers and authors we’re lucky to be a part of.</p>
+                        <hr>
+                        <div>
+                            {% block content %} 
+                            {% endblock %} 
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer id="colophon">
+                <div class="inner-wrap">
+                    Thank you for supporting our lofty goals. Your choice sustains a family business, and allows us to follow our passion for getting the right books into the right hands, 365 days a year.
+                </div>
+            </footer>
+        </div>
+    <script src="{% static 'main.js' %}"></script>
+    </body>
+</html>
